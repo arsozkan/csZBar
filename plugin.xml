@@ -29,11 +29,6 @@
                 android:screenOrientation="fullUser"
                 android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
         </config-file>
-        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-        <application 
-                     android:allowBackup="false"
-                     tools:replace="allowBackup"/>
-        </edit-config>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-feature android:name="android.hardware.camera" />
             <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
